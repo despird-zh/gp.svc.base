@@ -10,6 +10,16 @@ package com.gp.common;
  **/
 public class DataSourceHolder {
 
+	public static final String TRNS_MGR = "gpTxManager";
+	
+	public static final String DATA_SRC = "gpDataSource";
+	
+	public static final String TRANSFER_CACHE = "fileTransferCache";
+	
+	public static final String SYSSETTING_CACHE = "sysSettingCache";
+	
+	public static final String DICTIONARY_CACHE = "dictionaryCache";
+	
 	/**
 	 * the thread-local variable 
 	 **/
