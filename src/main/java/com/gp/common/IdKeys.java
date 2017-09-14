@@ -8,6 +8,7 @@ import java.util.Set;
 import org.apache.commons.lang.ArrayUtils;
 import org.apache.commons.lang.ObjectUtils;
 import org.apache.commons.lang.StringUtils;
+import org.springframework.util.Assert;
 
 import java.util.Base64.Decoder;
 import java.util.Base64.Encoder;
@@ -68,6 +69,7 @@ public class IdKeys {
 	 **/
 	public static String getTraceCode(String nodeCode, InfoId<?> infoId) {
 		
+		Assert.notNull(infoId, "the InfoId can't be null.");
 		Encoder encoder = Base64.getEncoder();
 		StringBuffer sb = new StringBuffer(30);
 		sb.append(nodeCode).append(GeneralConstants.NAMES_SEPARATOR);
