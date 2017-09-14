@@ -84,7 +84,9 @@ public enum IdKey implements Identifier{
 	
 	GP_OWM( "id", Long.class),
 	
-	GP_TOKENS("token_id", Long.class);
+	GP_TOKENS("token_id", Long.class),
+	GP_SYNC_MSG_OUT("msg_id", Long.class);;
+	
 	
 	private final Class<?> clazz;
 	private final String idColumn;
